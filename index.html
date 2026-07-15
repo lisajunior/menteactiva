@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" data-tamano="normal">
+<head>
+  <meta charset="UTF-8">
+  <!-- §5.bis — Viewport obligatorio: la app se ve como app móvil, nunca encogida -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F7F2E9">
+  <meta name="description" content="Juegos breves y amables para mantener la mente activa. Gratis, sin registro y sin publicidad.">
+  <title>MenteActiva</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/iconos/icono.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/componentes.css">
+</head>
+<body>
+
+  <!-- Todo se dibuja acá. Una sola columna, máximo 2 toques a cualquier lugar. -->
+  <main id="app" aria-live="polite"></main>
+
+  <!-- Núcleo (orden importa: primero utilidades, luego componentes, luego arranque) -->
+  <script src="utils/almacenamiento.js"></script>
+  <script src="utils/navegacion.js"></script>
+  <script src="components/encabezado.js"></script>
+  <script src="components/boton-grande.js"></script>
+  <script src="components/tarjeta-area.js"></script>
+  <script src="components/tarjeta-juego.js"></script>
+  <script src="components/mensaje-amable.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

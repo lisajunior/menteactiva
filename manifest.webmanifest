@@ -1,0 +1,14 @@
+{
+  "name": "MenteActiva",
+  "short_name": "MenteActiva",
+  "description": "Juegos breves y amables para mantener la mente activa.",
+  "lang": "es",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F2E9",
+  "theme_color": "#F7F2E9",
+  "icons": [
+    { "src": "assets/iconos/icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
